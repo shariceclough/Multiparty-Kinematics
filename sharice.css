@@ -114,39 +114,28 @@ div.sourceCode {
 
 
 
-body {
-  padding-left: 0;
+/* Remove fixed positioning on TOC */
+#TOC, .tocify {
+  position: static !important;
+  width: 100% !important;  /* fill column width */
+  max-height: none !important;
+  overflow: visible !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
-.main-container {
-  max-width: 940px;
-  margin-left: 290px;  /* Push content right to leave room for TOC */
-  margin-right: auto;  /* Keep right margin normal */
-}
-
-
-div.tocify {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  width: 250px;
-  max-width: 250px;
-  max-height: 85vh;
+/* Style TOC content with some padding */
+.tocify {
+  padding: 10px;
   background-color: #fafafa;
   border: 1px solid #ddd;
-  padding: 10px;
   border-radius: 4px;
-  overflow-y: auto;
-  display: block !important;
 }
 
-.main-container, div.main-container {
-  max-width: 940px !important;
-  margin-left: 290px !important;
-  margin-right: auto !important;
-  background-color: rgba(255,0,0,0.1) !important; /* debug */
-  border: 1px dashed red !important; /* debug */
+/* Remove extra body or container padding */
+body, .main-container {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
-
-
-
