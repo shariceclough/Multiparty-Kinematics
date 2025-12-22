@@ -118,8 +118,8 @@ body {
 /* TOC styling */
 
 div.tocify {
-  width: 250px; /* fixed width */
-  max-width: 250px;
+  width: 150px; /* fixed width */
+  max-width: 150px;
   max-height: 85%;
   position: fixed;
   top: 100px;
