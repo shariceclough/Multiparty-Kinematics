@@ -93,7 +93,7 @@ div.sourceCode {
 
 /* Add left padding to make room for floating TOC */
 body {
-  padding-left: 270px; /* Adjust this to match TOC width + left offset */
+  padding-left: 100px; /* Adjust this to match TOC width + left offset */
 }
 
 /* Style the TOC container */
