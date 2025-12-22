@@ -33,22 +33,15 @@ pre[class] {
 }
 
 /* TOC styling */
-#TOC, .tocify {
-  position: static !important;    /* disable fixed */
-  width: 100% !important;         /* fill grid col width */
-  max-height: none !important;
-  overflow: visible !important;
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-}
-
 .tocify {
-  padding: 10px;
+  position: sticky;
+  top: 100px;         /* distance from top */
+  max-height: calc(100vh - 120px);  /* stay within viewport height */
+  overflow-y: auto;   /* scroll inside TOC if too tall */
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 10px;
 }
 
 /* Active TOC item */
@@ -110,7 +103,7 @@ div.sourceCode {
 /* Remove row side margins */
 .row {
   margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin-right: 5 !important;
 }
 
 /* Remove gutters between grid columns */
