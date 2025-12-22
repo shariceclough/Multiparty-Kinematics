@@ -112,32 +112,22 @@ div.sourceCode {
 /* Keep body padding for TOC */
 
 body {
-  padding-left: 270px;  /* match TOC width + left offset */
+  padding-left: 290px;  /* match TOC width + left offset */
 }
 
 /* TOC styling */
 
-#TOC, .tocify {
+div.tocify {
+  width: 250px; /* fixed width */
+  max-width: 250px;
+  max-height: 85%;
   position: fixed;
   top: 100px;
   left: 20px;
-  width: 250px;
-  max-height: 80vh;
-  overflow-y: auto;
   background-color: #fafafa;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 4px;
-  display: block !important;
+  overflow-y: auto;
 }
 
-/* Responsive */
-
-@media (max-width: 992px) {
-  body {
-    padding-left: 0;
-  }
-  .tocify {
-    display: none !important;
-  }
-}
