@@ -117,3 +117,32 @@ body, .main-container {
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
+
+/* Reduce container padding */
+.container-fluid.main-container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Reduce gutters */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row > [class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Optionally adjust TOC width */
+.col-md-3 {
+  width: 22% !important;
+  max-width: 22% !important;
+}
+
+.col-md-9 {
+  width: 78% !important;
+  max-width: 78% !important;
+}
+
