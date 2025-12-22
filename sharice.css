@@ -112,7 +112,7 @@ div.sourceCode {
 /* Keep body padding for TOC */
 
 body {
-  padding-left: 290px;  /* match TOC width + left offset */
+  padding-left: 10px;  /* match TOC width + left offset */
 }
 
 /* TOC styling */
