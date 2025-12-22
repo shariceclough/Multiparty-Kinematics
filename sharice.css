@@ -90,3 +90,33 @@ p code span.co { color: #666699; font-style: italic; }
 div.sourceCode {
   background-color: #f5f5f5 !important;
 }
+
+/* Add left padding to make room for floating TOC */
+body {
+  padding-left: 270px; /* Adjust this to match TOC width + left offset */
+}
+
+/* Style the TOC container */
+#TOC, .tocify {
+  position: fixed;
+  top: 100px;      /* distance from top */
+  left: 20px;      /* distance from left edge */
+  width: 250px;    /* width of TOC */
+  max-height: 80vh; /* so it scrolls if too tall */
+  overflow-y: auto;
+  background-color: #fafafa; /* subtle background for clarity */
+  border: 1px solid #ddd;    /* light border */
+  padding: 10px;
+  border-radius: 4px;
+  display: block !important; /* ensure visibility */
+}
+
+/* Responsive: hide TOC and reset padding on small screens */
+@media (max-width: 992px) {
+  body {
+    padding-left: 0;
+  }
+  .tocify {
+    display: none !important;
+  }
+}
