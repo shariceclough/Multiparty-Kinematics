@@ -33,11 +33,23 @@ pre[class] {
 }
 
 /* TOC styling */
+#TOC, .tocify {
+  position: static !important; /* reset if previously forced */
+  width: 100% !important;      /* fill grid column */
+  max-height: none !important;
+  overflow: visible !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Sticky TOC override */
 .tocify {
   position: sticky;
-  top: 100px;         /* distance from top */
-  max-height: calc(100vh - 120px);  /* stay within viewport height */
-  overflow-y: auto;   /* scroll inside TOC if too tall */
+  top: 100px;  /* distance from top of viewport */
+  max-height: calc(100vh - 120px); /* height to stay within viewport */
+  overflow-y: auto;
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -93,20 +105,20 @@ div.sourceCode {
 
 /* Layout adjustments for container and grid */
 
-/* Reduce container-fluid padding (left and right) */
+/* Remove container padding */
 .container-fluid.main-container {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  max-width: 100% !important; /* full width */
+  max-width: 100% !important;
 }
 
 /* Remove row side margins */
 .row {
   margin-left: 0 !important;
-  margin-right: 5 !important;
+  margin-right: 0 !important;
 }
 
-/* Remove gutters between grid columns */
+/* Reduce gutters between columns */
 .row > [class*="col-"] {
   padding-left: 5px !important;
   padding-right: 5px !important;
@@ -128,14 +140,14 @@ div.sourceCode {
   padding-right: 10px !important;
 }
 
-/* Responsive: collapse TOC on small screens */
+/* Responsive: stack TOC below content on small screens */
 @media (max-width: 991px) {
   .col-md-3 {
     width: 100% !important;
     max-width: 100% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    order: 2;  /* put TOC below content */
+    order: 2;
   }
   .col-md-9 {
     width: 100% !important;
@@ -145,4 +157,5 @@ div.sourceCode {
     order: 1;
   }
 }
+
 
