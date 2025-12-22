@@ -109,10 +109,21 @@ div.sourceCode {
   padding-left: 0 !important;
 }
 
-/* Keep body padding for TOC */
+
+
+
+
+
 body {
-  padding-left: 290px;
+  padding-left: 0;
 }
+
+.main-container {
+  max-width: 940px;
+  margin-left: 290px;  /* Push content right to leave room for TOC */
+  margin-right: auto;  /* Keep right margin normal */
+}
+
 
 div.tocify {
   position: fixed;
