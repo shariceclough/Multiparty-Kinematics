@@ -92,28 +92,6 @@ div.sourceCode {
 }
 
 
-
-/* Remove extra left margin/padding from page wrapper */
-
-.page-wrapper {
-  max-width: none !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-/* Also content wrapper reset if needed */
-
-.content-wrapper {
-  max-width: none !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-
-
-
-
-
 /* Remove fixed positioning on TOC */
 #TOC, .tocify {
   position: static !important;
