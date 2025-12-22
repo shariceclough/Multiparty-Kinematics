@@ -140,10 +140,13 @@ div.tocify {
   display: block !important;
 }
 
-.main-container {
+.main-container, div.main-container {
   max-width: 940px !important;
   margin-left: 290px !important;
   margin-right: auto !important;
+  background-color: rgba(255,0,0,0.1) !important; /* debug */
+  border: 1px dashed red !important; /* debug */
 }
+
 
 
