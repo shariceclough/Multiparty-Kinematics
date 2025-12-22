@@ -90,23 +90,3 @@ p code span.co { color: #666699; font-style: italic; }
 div.sourceCode {
   background-color: #f5f5f5 !important;
 }
-
-/* Ensure R Markdown floating TOC is visible */
-.tocify {
-  position: fixed;
-  left: 20px;
-  top: 100px;
-  width: 250px;
-  max-height: 80%;
-  overflow-y: auto;
-}
-
-
-#TOC {
-  display: block !important;
-}
-
-.tocify {
-  display: block !important;
-}
-
