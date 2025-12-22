@@ -92,6 +92,16 @@ div.sourceCode {
 }
 
 /* Ensure R Markdown floating TOC is visible */
+.tocify {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  width: 250px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+
 #TOC {
   display: block !important;
 }
