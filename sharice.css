@@ -110,24 +110,28 @@ div.sourceCode {
 }
 
 /* Keep body padding for TOC */
-
 body {
-  padding-left: 10px;  /* match TOC width + left offset */
+  padding-left: 290px;
 }
 
-/* TOC styling */
-
 div.tocify {
-  width: 150px; /* fixed width */
-  max-width: 150px;
-  max-height: 85%;
   position: fixed;
   top: 100px;
   left: 20px;
+  width: 250px;
+  max-width: 250px;
+  max-height: 85vh;
   background-color: #fafafa;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 4px;
   overflow-y: auto;
+  display: block !important;
+}
+
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
