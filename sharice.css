@@ -91,38 +91,27 @@ div.sourceCode {
   background-color: #f5f5f5 !important;
 }
 
-/* Fix content width and margins to reduce extra left space */
-
-.container, .main-container, .content {
-  max-width: none !important;  /* allow full width */
-  margin-left: 0 !important;   /* remove extra margins */
-  padding-left: 0 !important;  /* remove extra padding */
-}
-
-/* Then add padding to body to leave room for TOC */
-
+/* Add left padding to make room for floating TOC */
 body {
-  padding-left: 270px;  /* adjust this to match TOC width + left offset */
+  padding-left: 100px; /* Adjust this to match TOC width + left offset */
 }
 
-/* TOC styling (same as before) */
-
+/* Style the TOC container */
 #TOC, .tocify {
   position: fixed;
-  top: 100px;
-  left: 20px;
-  width: 250px;
-  max-height: 80vh;
+  top: 100px;      /* distance from top */
+  left: 20px;      /* distance from left edge */
+  width: 250px;    /* width of TOC */
+  max-height: 80vh; /* so it scrolls if too tall */
   overflow-y: auto;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
+  background-color: #fafafa; /* subtle background for clarity */
+  border: 1px solid #ddd;    /* light border */
   padding: 10px;
   border-radius: 4px;
-  display: block !important;
+  display: block !important; /* ensure visibility */
 }
 
-/* Responsive adjustments */
-
+/* Responsive: hide TOC and reset padding on small screens */
 @media (max-width: 992px) {
   body {
     padding-left: 0;
